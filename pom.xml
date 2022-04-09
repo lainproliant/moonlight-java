@@ -4,14 +4,37 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <name>Moonlight</name>
+    <description>A set of toolbox libraries for general software development.</description>
+    <url>https://github.com/lainproliant/moonlight-java</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Lain Musgrove</name>
+            <email>lain.proliant@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/lainproliant/moonlight-java/tree/main</url>
+    </scm>
+
     <groupId>com.lainproliant</groupId>
     <artifactId>moonlight</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.8.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -20,4 +43,14 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>
