@@ -1,4 +1,6 @@
-package com.lainproliant.moonlight.automata;
+package com.lainproliant.moonlight.automata.lambda;
+
+import com.lainproliant.moonlight.automata.State;
 
 public interface LambdaControl<K, C> {
     void push(K key);

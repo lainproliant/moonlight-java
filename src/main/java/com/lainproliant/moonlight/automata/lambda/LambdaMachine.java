@@ -1,4 +1,6 @@
-package com.lainproliant.moonlight.automata;
+package com.lainproliant.moonlight.automata.lambda;
+
+import com.lainproliant.moonlight.automata.StateMachine;
 
 public class LambdaMachine<K, C> extends StateMachine<LambdaContext<K, C>> {
     public LambdaMachine(final K initState) {

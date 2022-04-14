@@ -1,5 +1,6 @@
 package com.lainproliant.moonlight.automata;
 
+import com.lainproliant.moonlight.automata.lambda.LambdaMachine;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -113,7 +114,7 @@ class AutomataTests {
 
         class SampleState extends State<Context> {
             @Override
-            public void init() {
+            public void setup() {
                 context().initCalled ++;
             }
 

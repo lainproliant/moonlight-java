@@ -1,4 +1,6 @@
-package com.lainproliant.moonlight.automata;
+package com.lainproliant.moonlight.automata.lambda;
+
+import com.lainproliant.moonlight.automata.AutomataException;
 
 import java.util.HashMap;
 import java.util.Map;

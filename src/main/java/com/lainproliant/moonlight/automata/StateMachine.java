@@ -36,12 +36,18 @@ public class StateMachine<C> implements Control<C> {
         final State<C> parent = current();
         stateStack.push(state);
         state.inject(this, parent);
-        state.init();
+        if (parent != null) {
+            parent.exit();
+        }
+        state.setup();
+        state.enter();
     }
 
     @Override
     public final void pop() {
-        stateStack.pop().cleanup();
+        final var state = stateStack.pop();
+        state.exit();
+        state.cleanup();
     }
 
     @Override
