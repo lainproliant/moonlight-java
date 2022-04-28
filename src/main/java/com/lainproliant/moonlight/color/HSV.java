@@ -1,6 +1,5 @@
 package com.lainproliant.moonlight.color;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.With;
 

@@ -1,5 +1,7 @@
-package com.lainproliant.moonlight.color;
+package moonlight.color;
 
+import com.lainproliant.moonlight.color.HSV;
+import com.lainproliant.moonlight.color.RGB;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

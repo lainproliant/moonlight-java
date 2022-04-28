@@ -25,7 +25,7 @@ public class StateMachine<C> implements Control<C> {
         return stateStack.peek();
     }
 
-    public final void run() {
+    public final void run(){
         while (current() != null) {
             Objects.requireNonNull(current()).run();
         }

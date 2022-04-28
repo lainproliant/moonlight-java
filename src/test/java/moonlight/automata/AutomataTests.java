@@ -1,12 +1,14 @@
-package com.lainproliant.moonlight.automata;
+package moonlight.automata;
 
+import com.lainproliant.moonlight.automata.State;
+import com.lainproliant.moonlight.automata.StateMachine;
 import com.lainproliant.moonlight.automata.lambda.LambdaMachine;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AutomataTests {
     @Test
